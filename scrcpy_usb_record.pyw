@@ -25,7 +25,7 @@ while True:
 
     if not file_path.is_file():
         os.system(f"adb kill-server")
-        os.system(f"scrcpy --video-codec=h264 --video-encoder=c2.android.avc.encoder --print-fps --video-bit-rate=2M --video-buffer=50 -t -r {file_path}")
+        os.system(f"scrcpy --video-codec=h264 --video-encoder=c2.android.avc.encoder --print-fps --video-bit-rate=26M --video-buffer=50 -t -r {file_path}")
         break
     else:
         date2[2] = int(date2[2]) + 1
